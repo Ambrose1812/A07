@@ -41,12 +41,23 @@ h3 { font-size: 105%; }
 /* Header */
 header {
   border-bottom: var(--border);
-  background: linear-gradient(30deg, #800000 0%, white 30%, white 65%, #800000 100%);
+  background: linear-gradient(
+    30deg,
+    #800000 0%,
+    white 30%,
+    white 65%,
+    #800000 100%
+  );
+}
+
+header img {
+  float: left;
+  margin: 0.75em 1em;
 }
 
 header h2 {
   font-size: 175%;
-  padding-bottom: 0;
+  padding-bottom: 0; /* remove extra space */
 }
 
 header h3 {
@@ -55,15 +66,10 @@ header h3 {
   padding-bottom: 1em;
 }
 
-header img {
-  float: left;
-  margin: 0.75em 1em;
-}
-
 /* Main content */
 main {
   clear: left;
-  padding: 0 1em 1em;
+  padding: 0 1em 1em; /* left, right, bottom */
 }
 
 main h1 {
@@ -73,7 +79,7 @@ main h1 {
 
 blockquote {
   font-style: italic;
-  padding: 1em;
+  padding: 1em; /* indent effect */
 }
 
 main img {
@@ -91,7 +97,8 @@ footer {
 footer p {
   color: white;
   text-align: center;
-  padding: 1em 0;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 /* Pill box */
@@ -103,7 +110,7 @@ footer p {
   background: #fff;
 }
 
-/* CSS class */
+/* Enlarged number for 75th Year */
 .large {
   font-size: 125%;
 }
